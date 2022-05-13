@@ -709,8 +709,8 @@ body.modal-open {
 .introduction {
   width: 100%;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/introduction/introduction-480@1x.jpeg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/introduction/introduction-480@1x.jpeg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/introduction/introduction-480@1x.jpeg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/introduction/introduction-480@1x.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -720,31 +720,31 @@ body.modal-open {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .introduction {
-    background-image: url("../../img/introduction/introduction-480@2x.jpeg");
+    background-image: url("../img/introduction/introduction-480@2x.jpeg");
   }
 }
 
 @media (min-width: 489px) {
   .introduction {
-    background-image: url("../../img/introduction/introduction-768@1x.jpeg");
+    background-image: url("../img/introduction/introduction-768@1x.jpeg");
   }
 }
 
 @media screen and (min-width: 489px) and (min-device-pixel-ratio: 2), screen and (min-width: 489px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 489px) and (min-resolution: 192dpi), screen and (min-width: 489px) and (min-resolution: 2dppx) {
   .introduction {
-    background-image: url("../../img/introduction/introduction-768@2x.jpeg");
+    background-image: url("../img/introduction/introduction-768@2x.jpeg");
   }
 }
 
 @media (min-width: 769px) {
   .introduction {
-    background-image: url("../../img/introduction/introduction-1600@1x.jpeg");
+    background-image: url("../img/introduction/introduction-1600@1x.jpeg");
   }
 }
 
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .introduction {
-    background-image: url("../../img/introduction/introduction-1600@2x.jpeg");
+    background-image: url("../img/introduction/introduction-1600@2x.jpeg");
   }
 }
 
