@@ -9,6 +9,7 @@
 		@media screen and (min-width: $mobile) {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 }
 	@media screen and (min-width: $desktop){
 		flex-wrap: nowrap;

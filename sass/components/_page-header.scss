@@ -128,8 +128,14 @@
 	flex-wrap: wrap;
 	margin: 21px 15px 21px 80px;
 	}
+	@media screen and (min-width: 768px){
+		margin-left: 70px;
+	}
+	@media screen and (min-width: 1141px){
+		margin: 0 0 0 270px;
+	}
 	@media screen and (min-width: $desktop){
-		margin: 0 0 0 290px;
+		margin-left: 290px;
 	}
 }
 .contacts__link{

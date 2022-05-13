@@ -5,13 +5,45 @@
 		to right,
 rgba(47, 48, 58, 0.4),
 rgba(47, 48, 58, 0.4)),
-	url('../img/introduction/introduction-bg-2.jpg');
+	url('../../img/introduction/introduction-480@1x.jpeg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 
 	letter-spacing: 0.06em;
 	text-align: center;
+
+	@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+		&{
+			background-image: url('../../img/introduction/introduction-480@2x.jpeg');
+		}
+	}
+	@media (min-width: 489px) {
+		&{
+			background-image: url('../../img/introduction/introduction-768@1x.jpeg');
+		}
+		@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+		&{
+			background-image: url('../../img/introduction/introduction-768@2x.jpeg');
+		}
+	}
+	}
+	@media (min-width: 769px) {
+		&{
+			background-image: url('../../img/introduction/introduction-1600@1x.jpeg');
+		}
+		@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+		&{
+			background-image: url('../../img/introduction/introduction-1600@2x.jpeg');
+		}
+	}
+	}
 }
 .introduction__content{
 	padding-bottom: 118px; 
@@ -24,7 +56,6 @@ rgba(47, 48, 58, 0.4)),
 
 }
 .introduction__title{
-	width: 300px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
