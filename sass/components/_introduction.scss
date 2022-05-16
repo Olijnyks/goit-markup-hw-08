@@ -110,15 +110,15 @@ rgba(47, 48, 58, 0.4)),
 	margin: 93px 15px 0 15px;
 }
 	@media screen and (min-width: $tablet) {
-		width: 450px;
-		margin: 0 auto;
-	}
-	@media screen and (min-width: $desktop) {
-		width: 528px;
+	width: 450px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(1);
+	}
+	@media screen and (min-width: $desktop) {
+	width: 528px;
+
 		}
 }
 }

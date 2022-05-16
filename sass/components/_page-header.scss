@@ -1,11 +1,11 @@
 .header{
-	position: relative;
 	@media screen and (min-width: $mobile) {
 		border-bottom: 1px solid getColor('cards');
 	}
 }
 .header__box, 
 .header__nav{
+	position: relative;
 	display: flex;
 	align-items: center;
 	@media screen and (max-width: $before-tablet) {
@@ -20,7 +20,7 @@
 	@media screen and (max-width: $before-tablet) {
 	position: absolute;
 	top: 10px;
-	right: 15px;
+	right: 0px;
 
 	display: inline-flex;
 	margin: 0;

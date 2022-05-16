@@ -309,12 +309,19 @@ body.modal-open {
 
 .title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
+}
+
+@media screen and (min-width: 1140px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .visually-hidden {
@@ -341,6 +348,7 @@ body.modal-open {
   color: white;
   background-color: #2196f3;
   font-family: inherit;
+  font-size: 16px;
   letter-spacing: 0.06em;
   font-weight: 700;
   line-height: 0.5em;
@@ -380,10 +388,6 @@ body.modal-open {
   }
 }
 
-.header {
-  position: relative;
-}
-
 @media screen and (min-width: 480px) {
   .header {
     border-bottom: 1px solid #ececec;
@@ -392,6 +396,7 @@ body.modal-open {
 
 .header__box,
 .header__nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,7 +420,7 @@ body.modal-open {
   .menu-button {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 0px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -827,18 +832,17 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .backdrop__modal {
     width: 450px;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 
 @media screen and (min-width: 1140px) {
   .backdrop__modal {
     width: 528px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -1225,15 +1229,25 @@ body.modal-open {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
-  width: 270px;
+  width: 354px;
 }
 
-.team__item:nth-child(odd) {
-  margin-right: 30px;
+.team__item:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .team__item:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+  .team__item:nth-child(odd) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 1140px) {
   .team__item {
+    width: 270px;
     margin-bottom: 0;
   }
   .team__item:not(:nth-last-child(-n + 1)) {
@@ -1288,6 +1302,11 @@ body.modal-open {
   color: white;
 }
 
+.team__img {
+  width: 100%;
+  height: auto;
+}
+
 /*clients*/
 .clients__items {
   display: -webkit-box;
@@ -1323,7 +1342,7 @@ body.modal-open {
       -ms-flex-pack: center;
           justify-content: center;
   color: #afb1b8;
-  width: 170px;
+  width: 210px;
   height: 92px;
   padding: 15px 31px;
   margin: 0;
@@ -1335,6 +1354,18 @@ body.modal-open {
 
 .clients__link:hover, .clients__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 1140px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 
 .clients__img {

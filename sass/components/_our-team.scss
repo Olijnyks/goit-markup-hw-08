@@ -22,12 +22,20 @@
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	margin-bottom: 30px;
 
-	width: 270px;
-
+	width: 354px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	@media screen and (min-width: $tablet){
+		&:nth-last-child(2){
+			margin-bottom: 0;
+		}
 		&:nth-child(odd){
 			margin-right: 30px;
 		}
+	}
 	@media screen and (min-width: $desktop){
+		width: 270px;
 		margin-bottom: 0;
 		&:not(:nth-last-child(-n + 1)){
 	margin-right: 30px;
@@ -70,4 +78,8 @@
 	background-color: getColor('accent');
 	color: getColor('primary-bg');
 }
+}
+.team__img{
+	width: 100%;
+	height: auto;
 }

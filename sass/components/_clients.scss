@@ -20,7 +20,7 @@
 	text-align: center;
 	justify-content: center;
 	color: getColor('icon');
-	width: 170px;
+	width: 210px;
 	height: 92px;
 	padding: 15px 31px;
 	margin: 0;
@@ -31,6 +31,12 @@
 
 	&:hover, &:focus{
 	color: getColor('accent');
+}
+@media screen and (min-width: $desktop){
+	width: 226px;
+}
+@media screen and (min-width: $desktop){
+	width: 170px;
 }
 }
 
