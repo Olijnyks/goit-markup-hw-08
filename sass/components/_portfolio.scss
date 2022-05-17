@@ -2,16 +2,16 @@
 .portfolio__nav{
 	display: flex; 
 	justify-content: center;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	@media screen and (max-width: $before-tablet) {
 		flex-wrap: wrap;
 		justify-content: flex-start;
 	}
-	@media screen and (max-width: $tablet) {
+	@media screen and (min-width: $tablet) {
 	margin-bottom: 30px;
 	}
-	@media screen and (max-width: $desktop) {
-	margin-bottom: 40px;
+	@media screen and (min-width: $desktop) {
+	margin-bottom: 50px;
 	}
 }
 .portfolio__btn{
@@ -21,7 +21,9 @@
 	margin-right: 0;
 }
 	@media screen and (max-width: $tablet) {
-	margin-bottom: 21px;
+	&:not(:last-child){
+		margin-bottom: 21px;
+	}
 	}
 }
 .portfolio__btn-nav{
@@ -73,8 +75,8 @@
 	@media screen and (min-width: 767px) and (max-width: 1199px){
 	width: 354px;
 
-	flex-basis: calc((100% - 60px) / 2);
-	margin: 0;
+	// flex-basis: calc((100% - 60px) / 2);
+	// margin: 0;
 	&:not(:nth-child(2n)){
 	margin-right: 30px;
 }
@@ -88,13 +90,13 @@
 	&:not(:nth-child(3n)){
 	margin-right: 30px;
 }
+&:not(:nth-last-child(-n + 1)){
+	margin-bottom: 0;
+}
+} 
 	&:not(:nth-last-child(-n + 3)){
 	margin-bottom: 30px;
 }
-	&:not(:nth-last-child(-n + 1)){
-		margin-bottom: 0;
-	}
-	} 
 }
 
 .portfolio__overlay{

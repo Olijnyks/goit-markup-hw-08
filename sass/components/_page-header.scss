@@ -1,4 +1,5 @@
 .header{
+	position: relative;
 	@media screen and (min-width: $mobile) {
 		border-bottom: 1px solid getColor('cards');
 	}
@@ -57,10 +58,12 @@
 	@media screen and (max-width: $before-tablet) {
 	display: none;
 
-	position: absolute;
+	// position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	
+	width: 100vw;
 	height: 100vh;
 
 	background-color: getColor('primary-bg');
@@ -71,12 +74,14 @@
 	letter-spacing: 0.02em;
 
 	transition: display 250ms $timing-function;
-	
+
 	&.is-open{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		z-index: 1;
+   pointer-events: auto;
+	overflow:scroll
 	}
 	}
 	@media screen and (min-width: $tablet) {

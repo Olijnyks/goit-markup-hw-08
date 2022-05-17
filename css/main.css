@@ -388,6 +388,10 @@ body.modal-open {
   }
 }
 
+.header {
+  position: relative;
+}
+
 @media screen and (min-width: 480px) {
   .header {
     border-bottom: 1px solid #ececec;
@@ -458,10 +462,10 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .header-menu {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: white;
     padding: 48px 40px;
@@ -483,6 +487,8 @@ body.modal-open {
         -ms-flex-pack: justify;
             justify-content: space-between;
     z-index: 1;
+    pointer-events: auto;
+    overflow: scroll;
   }
 }
 
@@ -1360,7 +1366,7 @@ body.modal-open {
   color: #2196f3;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 768px) {
   .clients__link {
     width: 226px;
   }

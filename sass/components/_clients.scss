@@ -32,7 +32,7 @@
 	&:hover, &:focus{
 	color: getColor('accent');
 }
-@media screen and (min-width: $desktop){
+@media screen and (min-width: $tablet){
 	width: 226px;
 }
 @media screen and (min-width: $desktop){
